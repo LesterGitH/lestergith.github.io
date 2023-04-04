@@ -4,101 +4,758 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Document</title>
   </head>
   <body>
-    <div class="container">
-      <header class="header">
-        <nav class="header-link">
-          <img src="img/img-tea-cozy-logo.png" alt="Tea Cozy Logo" />
-          <ul class="list-link">
-            <li class="links"><a href="#"> Mission</a></li>
-            <li class="links"><a href="#"> Feature Tea</a></li>
-            <li class="links"><a href="#"> Locations</a></li>
+    <header class="header-container">
+      <div class="heading-class-container">
+        <div class="logo-container">
+          <a href="#" class="sales-force-logo-header">
+            <img
+              src="img/salesforce.png"
+              alt="Sales force header logo"
+              class="sales-force-logo-image"
+              width="512"
+              height="512"
+            />
+          </a>
+        </div>
+        <nav role="navigation" class="main-menu-header">
+          <ul class="nav-menu-items-list">
+            <li class="nav-menu-item"><a href="#">Products</a></li>
+            <li class="nav-menu-item"><a href="#">Industries</a></li>
+            <li class="nav-menu-item"><a href="#">Learning</a></li>
+            <li class="nav-menu-item"><a href="#">Support</a></li>
+            <li class="nav-menu-item"><a href="#">Company</a></li>
+            <li class="nav-menu-item"><a href="#">Salesforce+</a></li>
           </ul>
         </nav>
-      </header>
-      <main class="main">
-        <section class="tea-cozy-mission">
-          <img src="img/img-mission-background.jpg" alt="Mission-background" />
-          <h2 class="mission-heading">Our Mission</h2>
-          <h4 class="mission-values">
-            Handpicked, Artisanally, Free Range, Sustainable, Small Batch, Fair
-            Trade, Organic Tea
-          </h4>
-        </section>
-        <section class="tea-of-the-month">
-          <h2 class="tea-of-the-month-heading">Tea of the Month</h2>
-          <h4 class="tea-of-the-month-value">
-            What's Steeping at The Tea Cozy?
-          </h4>
-          <div class="tofm-img-container">
-            <figure class="tea-flavors">
-              <img src="img/img-berryblitz.jpg" alt="Fall Berry Blitz Tea" />
-              <figcaption class="flavors">Fall Berry Blitz Tea</figcaption>
-            </figure>
-            <fgure class="tea-flavors">
-              <img src="img/img-spiced-rum.jpg" alt="Spiced Rum" />
-              <figcaption class="flavors">Spiced Rum Tea</figcaption>
-            </fgure>
-            <fgure class="tea-flavors">
-              <img src="img/img-donut.jpg" alt="Seasonal Donuts" />
-              <figcaption class="flavors">Seasonal Donuts</figcaption>
-            </fgure>
-            <fgure class="tea-flavors">
-              <img src="img/img-myrtle-ave.jpg" alt="Myrtle Ave Tea" />
-              <figcaption class="flavors">Myrtle Ave Tea</figcaption>
-            </fgure>
-            <fgure class="tea-flavors">
-              <img
-                src="img/img-bedford-bizarre.jpg"
-                alt="Bedford Bizarre Tea"
-              />
-              <figcaption class="flavors">Bedford Bizarre Tea</figcaption>
-            </fgure>
-          </div>
-        </section>
-        <section class="locations-list">
-          <h2 class="location-header">Locations</h2>
-          <figure class="location-background">
+        <nav role="navigation" class="main-menu-utility">
+          <ul class="nav-menu-utility-items">
+            <li class="nav-menu-utility-item utility-item-contact">
+              <div class="menu-utility-contact-info">
+                <a href="#" class="contact-us">Contact Us</a>
+                <br />
+                <a href="#" class="phone-number">+65 123123</a>
+              </div>
+            </li>
+            <li class="nav-menu-utility-item">
+              <a href="#">
+                <img
+                  src="img/search.png"
+                  alt="Search Icon"
+                  width="512"
+                  height="512"
+                  class="utility-icon"
+              /></a>
+            </li>
+            <li class="nav-menu-utility-item">
+              <a href="#">
+                <img
+                  src="img/world.png"
+                  alt="World Icon"
+                  width="512"
+                  height="512"
+                  class="utility-icon"
+              /></a>
+            </li>
+            <li class="nav-menu-utility-item"><a href="#"> Login</a></li>
+          </ul>
+        </nav>
+        <div class="menu-sign-in-utility"><a href="#">Try for free</a></div>
+      </div>
+    </header>
+    <main class="main-container">
+      <div class="jumbo-main-container">
+        <div class="jumbo-container">
+          <div class="world-tour">
             <img
-              src="img/img-locations-background.jpg"
-              alt="Location Background"
+              src="img/sfwt23_logo.png"
+              alt="sales-force-sydney-logo"
+              class="world-tour-img"
             />
-            <figcaption class="location-caption">Location</figcaption>
-          </figure>
-
-          <div class="location-address-container">
-            <div class="location-address downtown">
-              <h3>Downtown</h3>
-              <h4>384 West 4th St</h4>
-              <h4>Suite 108</h4>
-              <h4>Portland, Maine</h4>
+          </div>
+          <div class="blaze-your-trail">
+            <div class="blaze-quote">
+              <span class="blaze-trail"
+                >Blaze your trail
+                <span class="blaze-sucess">to success now.</span></span
+              >
             </div>
-            <div class="location-address east-bayside">
-              <h3>East Bayside</h3>
-              <h4>3433 Phisherman's Avenue</h4>
-              <h4>(Northwest Corner)</h4>
-              <h4>Portland, Maine</h4>
+            <div class="blaze-catch">
+              Catch the best of World Tour Sydney on demand.
             </div>
-            <div class="location-address oakdale">
-              <h3>Oakdale</h3>
-              <h4>515 Crescent Avenue</h4>
-              <h4>Second Floor</h4>
-              <h4>Portland, Maine</h4>
+            <div class="blaze-watch-now"><a href="#">Watch now</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="main-slogan-information">
+        <div class="main-slogan-container">
+          <div class="first-section-slogan">
+            <div class="drive-growth-container">
+              <h1 class="drive-growth-content">
+                Drive growth and cost savings with the world’s #1 CRM.
+              </h1>
+            </div>
+            <div class="meralco-sales-force-container">
+              <p class="meralco-customer">
+                Salesforce is helping Meralco powers up customer experience for
+                the digital age. <a href="#" class="meralco-link">See how ></a>
+              </p>
+            </div>
+            <div class="slogan-button">
+              <div class="start-trial">
+                <a href="#" class="trial-link">Start my free trial</a>
+              </div>
+              <div class="watch-demo">
+                <a href="#" class="watch-demo-link">Watch demos</a>
+              </div>
             </div>
           </div>
-        </section>
-      </main>
-      <footer class="footer">
-        <section class="contacts">
-          <h2 class="footer-the-cozy">The Tea Cozy</h2>
-          <h5 class="email-contact">contact@theateacozy.com</h5>
-          <h5 class="tel-num">917-555-8904</h5>
-        </section>
-        <h5 class="copyright-mark">copyright The Tea Cozy 2017</h5>
-      </footer>
-    </div>
+          <div class="blaze-image-content">
+            <a href="#" class="blaze-image-meralco-link">
+              <img
+                src="img/prospect-jumbotron-lg_meralco-1053x500.jpg"
+                alt="blaze-prospect"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="sales-force-function-container-background">
+        <div class="we-bring-company-together-container">
+          <div class="sales-force-functions">
+            <div class="slogan-header">
+              <h2 class="slogan-h2">
+                We bring companies and customer together.
+              </h2>
+            </div>
+            <div class="slogan-content">
+              <p class="content-information">
+                Salesforce is the worlds most trusted customer relationship
+                management (CRM) platform. We help your marketing, sales,
+                commerce, service and IT teams work as one from anywhere — so
+                you can keep your customers happy everywhere.
+              </p>
+            </div>
+            <div class="slogan-button">
+              <div class="start-trial">
+                <a href="#" class="trial-link">Start my free trial</a>
+              </div>
+              <div class="watch-demo">
+                <a href="#" class="watch-demo-link-function">Watch demos</a>
+              </div>
+            </div>
+          </div>
+          <div class="sales-force-function-items">
+            <div class="function-one sales-force-function-item-container">
+              <section class="first-section">
+                <div class="fuction-one-icon">
+                  <a href="#" class="icon-link"
+                    ><img
+                      src="/img/au-hp-min-prod-smb-img.png"
+                      alt="Small Business"
+                      width="43"
+                      height="43"
+                  /></a>
+                </div>
+                <div class="function-one-header">
+                  <a href="#" class="fuction-one-link">Small Business</a>
+                </div>
+              </section>
+              <section class="second-section">
+                <p class="function-one-theme">
+                  Sell smarter and provide support faster in a single app.
+                </p>
+              </section>
+              <section class="third-section">
+                <p class="title-features">Popular Features:</p>
+                <ul class="features-list">
+                  <li class="feature-item">Lead and account management</li>
+                  <li class="feature-item">Customisable dashboards</li>
+                  <li class="feature-item">Productivity tools</li>
+                </ul>
+              </section>
+              <section class="watch-demo-function">
+                <div class="watch-demo">
+                  <a href="#" class="watch-demo-link">Watch Demo</a>
+                </div>
+              </section>
+            </div>
+            <div class="function-second sales-force-function-item-container">
+              <section class="first-section">
+                <div class="fuction-one-icon">
+                  <a href="#" class="icon-link"
+                    ><img
+                      src="img/au-hp-min-prod-sales-img.png"
+                      alt="Sales Cloud Icon"
+                      width="43"
+                      height="43"
+                  /></a>
+                </div>
+                <div class="function-one-header">
+                  <a href="#" class="fuction-one-link">Sales Cloud</a>
+                </div>
+              </section>
+              <section class="second-section">
+                <p class="function-one-theme">
+                  Close more deals and speed up growth with the #1 CRM.
+                </p>
+              </section>
+              <section class="third-section">
+                <p class="title-features">Popular Features:</p>
+                <ul class="features-list">
+                  <li class="feature-item">Forecasting tools</li>
+                  <li class="feature-item">Lead management</li>
+                  <li class="feature-item">Process automation</li>
+                </ul>
+              </section>
+              <section class="watch-demo-function">
+                <div class="watch-demo">
+                  <a href="#" class="watch-demo-link">Watch Demo</a>
+                </div>
+              </section>
+            </div>
+            <div class="function-third sales-force-function-item-container">
+              <section class="first-section">
+                <div class="fuction-one-icon">
+                  <a href="#" class="icon-link"
+                    ><img
+                      src="img/au-hp-min-prod-service-img.png"
+                      alt="Service Cloud"
+                      width="43"
+                      height="43"
+                  /></a>
+                </div>
+                <div class="function-one-header">
+                  <a href="#" class="fuction-one-link">Service Cloud</a>
+                </div>
+              </section>
+              <section class="second-section">
+                <p class="function-one-theme">
+                  Make customers happy faster and build loyalty with Service
+                  Cloud.
+                </p>
+              </section>
+              <section class="third-section">
+                <p class="title-features">Popular Features:</p>
+                <ul class="features-list">
+                  <li class="feature-item">Intelligent workflows</li>
+                  <li class="feature-item">Productivity tools</li>
+                  <li class="feature-item">Self-service portals</li>
+                </ul>
+              </section>
+              <section class="watch-demo-function">
+                <div class="watch-demo">
+                  <a href="#" class="watch-demo-link">Watch Demo</a>
+                </div>
+              </section>
+            </div>
+            <div class="function-fourth sales-force-function-item-container">
+              <section class="first-section">
+                <div class="fuction-one-icon">
+                  <a href="#" class="icon-link"
+                    ><img
+                      src="img/au-hp-min-prod-marketing-img.png"
+                      alt="Marketing Cloud Icon"
+                      width="43"
+                      height="43"
+                  /></a>
+                </div>
+                <div class="function-one-header">
+                  <a href="#" class="fuction-one-link">Marketing Cloud</a>
+                </div>
+              </section>
+              <section class="second-section">
+                <p class="function-one-theme">
+                  Build customer relationships for life with data-first digital
+                  marketing.
+                </p>
+              </section>
+              <section class="third-section">
+                <p class="title-features">Popular Features:</p>
+                <ul class="features-list">
+                  <li class="feature-item">Unify customer data</li>
+                  <li class="feature-item">Scale personalised interactions</li>
+                  <li class="feature-item">Optimise marketing investments</li>
+                </ul>
+              </section>
+              <section class="watch-demo-function">
+                <div class="watch-demo">
+                  <a href="#" class="watch-demo-link">Watch Demo</a>
+                </div>
+              </section>
+            </div>
+            <div class="function-five sales-force-function-item-container">
+              <section class="first-section">
+                <div class="fuction-one-icon">
+                  <a href="#" class="icon-link"
+                    ><img
+                      src="img/au-hp-min-prod-platform-img.png"
+                      alt="Platform Icon"
+                      width="43"
+                      height="43"
+                  /></a>
+                </div>
+                <div class="function-one-header">
+                  <a href="#" class="fuction-one-link">Platform</a>
+                </div>
+              </section>
+              <section class="second-section">
+                <p class="function-one-theme">
+                  Go digital fast and empower your teams to work from anywhere.
+                </p>
+              </section>
+              <section class="third-section">
+                <p class="title-features">Popular Features:</p>
+                <ul class="features-list">
+                  <li class="feature-item">No-code builders</li>
+                  <li class="feature-item">Responsive content</li>
+                  <li class="feature-item">Self-service learning</li>
+                </ul>
+              </section>
+              <section class="watch-demo-function">
+                <div class="watch-demo">
+                  <a href="#" class="watch-demo-link">Watch Demo</a>
+                </div>
+              </section>
+            </div>
+            <div class="function-six sales-force-function-item-container">
+              <section class="first-section">
+                <div class="fuction-one-icon">
+                  <a href="#" class="icon-link"
+                    ><img
+                      src="img/au-hp-min-prod-commerce-img.png"
+                      alt="Commerce Cloud Icon"
+                      width="43"
+                      height="43"
+                  /></a>
+                </div>
+                <div class="function-one-header">
+                  <a href="#" class="fuction-one-link">Commerce Cloud</a>
+                </div>
+              </section>
+              <section class="second-section">
+                <p class="function-one-theme">
+                  Grow faster with customer-first ecommerce built on the world’s
+                  #1 CRM.
+                </p>
+              </section>
+              <section class="third-section">
+                <p class="title-features">Popular Features:</p>
+                <ul class="features-list">
+                  <li class="feature-item">Digital commerce</li>
+                  <li class="feature-item">Social shopping</li>
+                  <li class="feature-item">Order management</li>
+                </ul>
+              </section>
+              <section class="watch-demo-function">
+                <div class="watch-demo">
+                  <a href="#" class="watch-demo-link">Watch Demo</a>
+                </div>
+              </section>
+            </div>
+          </div>
+          <div class="sales-force-offers-container">
+            <div class="sales-force-offers-icon">
+              <img src="img/hp-img-ico-bird-t.png" alt="Sales offers icon" />
+              <p class="check-out-message">
+                Want to check out everything Salesforce offers?
+              </p>
+            </div>
+
+            <div class="watch-demo">
+              <a href="#" class="watch-demo-link">SEE ALL OUR PRODUCTS </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sales-force-partners">
+        <div class="partners-quote">
+          <p class="quote-content">
+            Over 150,000 companies, both big and small, are growing their
+            business with Salesforce.
+          </p>
+        </div>
+        <div class="sales-force-partner-image-container">
+          <div class="partner-image-item">
+            <img
+              src="img/ap-hp-min-logo-avc.png"
+              alt="Anantra logo"
+              width="450"
+              height="162"
+            />
+          </div>
+          <div class="partner-image-item">
+            <img
+              src="img/ap-hp-min-logo-axa.png"
+              alt="AXA Logo"
+              width="450"
+              height="162"
+            />
+          </div>
+          <div class="partner-image-item">
+            <img
+              src="img/ap-hp-min-logo-hoolah.png"
+              alt="Hoolah Logo"
+              width="450"
+              height="162"
+            />
+          </div>
+          <div class="partner-image-item">
+            <img
+              src="img/ap-hp-min-logo-luxasia.png"
+              alt="Luxasia Logo"
+              width="450"
+              height="162"
+            />
+          </div>
+          <div class="partner-image-item">
+            <img
+              src="img/ap-hp-min-logo-meralco.png"
+              alt="Meralco Logo"
+              width="450"
+              height="162"
+            />
+          </div>
+          <div class="partner-image-item">
+            <img
+              src="img/ap-hp-min-logo-roojai.png"
+              alt="Roojai Logo"
+              width="450"
+              height="162"
+            />
+          </div>
+        </div>
+        <div class="all-customer-container">
+          <a href="#" class="view-all-customer-link">View all customer</a>
+        </div>
+      </div>
+      <div class="try-sales-force-free-container">
+        <div class="sales-force-trial-container">
+          <p class="try-sales-force-quote">
+            Try Salesforce for free. No credit card required, no software to
+            install.
+          </p>
+          <div class="free-trial-link-container">
+            <a href="#" class="free-trial-link">Start my free trial</a>
+          </div>
+        </div>
+        <div class="free-trial-image-container">
+          <img
+            src="img/php-free-trial-mobile.png"
+            alt="Free trial image"
+            width="768"
+            height="710"
+          />
+        </div>
+      </div>
+      <div class="sales-force-ratings-container">
+        <div class="sales-force-rating-header-container">
+          <h2 class="header-content">Salesforce customers have seen:</h2>
+        </div>
+        <div class="rating-content-container">
+          <div class="rating-content-item-first-row">
+            <div class="rating-content-item-image-container">
+              <img
+                src="img/au-hp-min-met-49-img.png"
+                alt="Rating image"
+                class="rating-image-item"
+                width="420"
+                height="400"
+              />
+            </div>
+            <div class="rating-quote-link-container">
+              <a href="#" class="rating-quote-link">More qualified leads</a>
+            </div>
+          </div>
+          <div class="rating-content-item-first-row">
+            <div class="rating-content-item-image-container">
+              <img
+                src="img/au-hp-min-met-49-img.png"
+                alt="Rating image"
+                class="rating-image-item"
+                width="420"
+                height="400"
+              />
+            </div>
+            <div class="rating-quote-link-container">
+              <a href="#" class="rating-quote-link">More qualified leads</a>
+            </div>
+          </div>
+          <div class="rating-content-item-first-row">
+            <div class="rating-content-item-image-container">
+              <img
+                src="img/au-hp-min-met-49-img.png"
+                alt="Rating image"
+                class="rating-image-item"
+                width="420"
+                height="400"
+              />
+            </div>
+            <div class="rating-quote-link-container">
+              <a href="#" class="rating-quote-link">More qualified leads</a>
+            </div>
+          </div>
+          <div class="rating-quote-container">
+            <h2 class="rating-quote-content">
+              Our technology helps people create better jobs, lives, companies,
+              and communities.
+            </h2>
+          </div>
+          <div class="rating-content-item-second-row">
+            <div class="rating-content-item-image-container">
+              <img
+                src="img/au-hp-min-met-49-img.png"
+                alt="Rating image"
+                class="rating-image-item"
+                width="420"
+                height="400"
+              />
+            </div>
+            <div class="rating-quote-link-container">
+              <a href="#" class="rating-quote-link">More qualified leads</a>
+            </div>
+          </div>
+          <div class="rating-content-item-second-row">
+            <div class="rating-content-item-image-container">
+              <img
+                src="img/au-hp-min-met-49-img.png"
+                alt="Rating image"
+                class="rating-image-item"
+                width="420"
+                height="400"
+              />
+            </div>
+            <div class="rating-quote-link-container">
+              <a href="#" class="rating-quote-link">More qualified leads</a>
+            </div>
+          </div>
+          <div class="rating-content-item-second-row">
+            <div class="rating-content-item-image-container">
+              <img
+                src="img/au-hp-min-met-49-img.png"
+                alt="Rating image"
+                class="rating-image-item"
+                width="420"
+                height="400"
+              />
+            </div>
+            <div class="rating-quote-link-container">
+              <a href="#" class="rating-quote-link">More qualified leads</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="inquiry-container">
+        <div class="question-related-container">
+          <div class="question-heading-container">
+            <h2 class="question-content">
+              Questions? Well put you on the right path.
+            </h2>
+          </div>
+          <p class="question-suggestion">
+            Ask about Salesforce products, pricing, implementation, or anything
+            else. Our highly trained reps are standing by, ready to help.
+          </p>
+          <div class="question-contact-button">
+            <div class="question-contact-us-container">
+              <a href="#" class="contact-us-link">Contact us</a>
+            </div>
+            <div class="question-pricing">
+              <a href="#" class="question-pricing-link">Editions & Pricing</a>
+            </div>
+          </div>
+          <div class="question-iamge-container">
+            <img
+              src="img/ap-hp-footer-img-800x459px.png"
+              alt=""
+              class="question-image"
+              width="800"
+              height="459"
+            />
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer-container">
+      <div class="footer-first-container-section">
+        <div class="footer-contact-info">
+          <div class="sales-force-logo-footer">
+            <img
+              src="img/salesforce.png"
+              alt="Sales force logo"
+              class="sales-force-logo-image"
+            />
+          </div>
+          <div class="sales-force-contact-social-media-container">
+            <a href="#" class="social-media-icon">
+              <img src="img/facebook-day.svg" alt="Facebook icon" /></a
+            ><a href="#" class="social-media-icon">
+              <img src="img/twitter-day.svg" alt="Twitter icon" /></a
+            ><a href="#" class="social-media-icon">
+              <img src="img/linkedin-day.svg" alt="Linkedin icon" /></a
+            ><a href="#" class="social-media-icon"
+              ><img src="img/youtube-day.svg" alt="Youtube icon" /></a
+            ><a href="#" class="social-media-icon"
+              ><img src="img/instagram-day.svg" alt="Instagram icon"
+            /></a>
+          </div>
+          <div class="sales-contact-info-number">
+            <span class="phone-lead">Call us at</span>
+            <a href="" class="phone-lead-number"
+              >800 1301 448 (SG), 800 967 655 (HK), +65 6302 5700 (Intl)
+            </a>
+          </div>
+        </div>
+        <div class="sales-force-new-container">
+          <h3 class="sales-force-new-heading">New to Salesforce?</h3>
+          <div class="new-sales-force-option-container">
+            <ul class="new-sales-force-list-container">
+              <li class="new-sales-force-item">
+                <a href="#" class="new-sales-force-link">Why Salesforce</a>
+              </li>
+              <li class="new-sales-force-item">
+                <a href="#" class="new-sales-force-link">What is CRM</a>
+              </li>
+              <li class="new-sales-force-item">
+                <a href="#" class="new-sales-force-link"
+                  >Explore all products</a
+                >
+              </li>
+              <li class="new-sales-force-item">
+                <a href="#" class="new-sales-force-link"
+                  >What is cloud computing</a
+                >
+              </li>
+              <li class="new-sales-force-item">
+                <a href="#" class="new-sales-force-link">Customer success</a>
+              </li>
+              <li class="new-sales-force-item">
+                <a href="#" class="new-sales-force-link">Product pricing</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="sales-force-about-container">
+          <h3 class="about-sales-force-heading">About Salesforce</h3>
+          <ul class="about-sales-force-list">
+            <li class="about-sales-force-item">
+              <a href="#" class="about-sales-force-link">Our story</a>
+            </li>
+            <li class="about-sales-force-item">
+              <a href="#" class="about-sales-force-link">Careers</a>
+            </li>
+            <li class="about-sales-force-item">
+              <a href="#" class="about-sales-force-link">Press</a>
+            </li>
+            <li class="about-sales-force-item">
+              <a href="#" class="about-sales-force-link">Blog</a>
+            </li>
+            <li class="about-sales-force-item">
+              <a href="#" class="about-sales-force-link"
+                >Security & Performance</a
+              >
+            </li>
+            <li class="about-sales-force-item">
+              <a href="#" class="about-sales-force-link">Sales.org</a>
+            </li>
+            <li class="about-sales-force-item">
+              <a href="#" class="about-sales-force-link">Best CRM Software</a>
+            </li>
+            <li class="about-sales-force-item">
+              <a href="#" class="about-sales-force-link">Sustainability</a>
+            </li>
+            <li class="about-sales-force-item">
+              <a href="#" class="about-sales-force-link">Legal</a>
+            </li>
+            <li class="about-sales-force-item">
+              <a href="#" class="about-sales-force-link"
+                >Give us your Feedback</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="popular-sales-force-container">
+          <h3 class="popular-sales-force-heading">Popular Links</h3>
+          <ul class="popular-sales-force-list">
+            <li class="popular-sales-force-item">
+              <a href="#" class="popular-sales-force-link"
+                >New Release Features</a
+              >
+            </li>
+            <li class="popular-sales-force-item">
+              <a href="#" class="popular-sales-force-link"
+                >Salesforce Mobile App</a
+              >
+            </li>
+            <li class="popular-sales-force-item">
+              <a href="#" class="popular-sales-force-link"
+                >Business App Store</a
+              >
+            </li>
+            <li class="popular-sales-force-item">
+              <a href="#" class="popular-sales-force-link">Dreamforce</a>
+            </li>
+            <li class="popular-sales-force-item">
+              <a href="#" class="popular-sales-force-link">CRM software</a>
+            </li>
+            <li class="popular-sales-force-item">
+              <a href="#" class="popular-sales-force-link">Salesforce Plus</a>
+            </li>
+            <li class="popular-sales-force-item">
+              <a href="#" class="popular-sales-force-link"
+                >Salesforce for startups</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="second-footer-container">
+        <div class="footer-world-wide-container">
+          <a href="#" class="footer-world-wide-link">WORLDWIDE</a>
+        </div>
+        <div class="footer-copyright-container">
+          <p class="copyright-container">
+            Copyright 2023 Salesforce, Inc.
+            <a href="#" class="all-right-reserved-link">All rights reserved</a>.
+            Varlous trademarks held by their respective owners.
+          </p>
+          <p class="sales-force-location">
+            Salesforce.com Singapore Pte Ltd. 5 Temasek Boulevard #13-01 Suntec
+            Tower 5 Singapore 038985
+          </p>
+          <nav class="footer-legal-container">
+            <ul class="footer-legal-list">
+              <li class="footer-legal-container-item">
+                <a href="#" class="footer-legal-links">Legal</a>
+              </li>
+              <li class="footer-legal-container-item">
+                <a href="#" class="footer-legal-links">Terms of Service</a>
+              </li>
+              <li class="footer-legal-container-item">
+                <a href="#" class="footer-legal-links">Privacy</a>
+              </li>
+              <li class="footer-legal-container-item">
+                <a href="#" class="footer-legal-links">Responsible Dislosure</a>
+              </li>
+              <li class="footer-legal-container-item">
+                <a href="#" class="footer-legal-links">Trust</a>
+              </li>
+              <li class="footer-legal-container-item">
+                <a href="#" class="footer-legal-links">Contact</a>
+              </li>
+              <li class="footer-legal-container-item">
+                <a href="#" class="footer-legal-links">Cookie Preference</a>
+              </li>
+              <li class="footer-legal-container-item">
+                <a href="#" class="footer-legal-links">Your Privacy Choices</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

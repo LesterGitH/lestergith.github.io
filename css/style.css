@@ -1,0 +1,455 @@
+/* Import font family */
+
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Merriweather:ital@0;1&family=Roboto&family=Work+Sans:wght@400;500;800&display=swap");
+
+/* Reset basic element */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Variable */
+
+:root {
+  --HEADING-COLOR: #fff;
+  --HEADING-FS: 16px;
+  --HEADING-HEADER-NAV-COLOR: #032d60;
+  --HEADING-TRY-FOR-FREE: #2e844a;
+  --HEADING-BLAZE-BG: #032d60;
+  --HEADING-BLAZE-TRAIL-QUOTE: rgb(13, 157, 218);
+  --HEADING-WATCH-NOW: #0b5cab;
+  --BLAZE-MERALCO-CUSTOMER: #181818;
+  --BLAZE-TRIAL-LINK-BG: #278806;
+  --BODY-FONT-FAMILY: "Roboto";
+}
+
+body {
+  font-family: var(--BODY-FONT-FAMILY);
+}
+
+/* Styling of header */
+
+.header-container {
+  display: block;
+  font-size: var(--HEADING-FS);
+  width: 100%;
+  top: 0;
+  position: fixed;
+  z-index: 1;
+  background-color: white;
+  height: 96px;
+
+  padding-top: 10px;
+}
+
+.heading-class-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 40px;
+}
+
+/* Styling logo margin */
+
+.logo-container {
+  margin-right: 24px;
+}
+
+/* Styling Navigation of Header*/
+
+.main-menu-header {
+  flex-grow: 1;
+}
+
+.nav-menu-items-list,
+.nav-menu-utility-items,
+.menu-sign-in-utility a {
+  display: flex;
+  color: var(--HEADING-HEADER-NAV-COLOR);
+  list-style-type: none;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav-menu-utility-items {
+  align-items: center;
+  padding: 0 10px;
+}
+
+/* Styling navigation links */
+.nav-menu-item {
+  padding: 0 16px;
+}
+.nav-menu-item a,
+.nav-menu-utility-item a {
+  color: var(--HEADING-HEADER-NAV-COLOR);
+  text-decoration: none;
+}
+
+.menu-utility-contact-info {
+  text-align: center;
+}
+
+.nav-menu-utility-item {
+  padding: 0 10px;
+}
+
+/* Styling try it for free */
+
+.menu-sign-in-utility a {
+  background-color: var(--HEADING-TRY-FOR-FREE);
+  color: var(--HEADING-COLOR);
+  padding: 8px 24px;
+  border: 2px solid var(--HEADING-TRY-FOR-FREE);
+  border-radius: 5px;
+}
+/* Styling Image Logo of Header*/
+
+.sales-force-logo-image {
+  width: 68px;
+  height: 68px;
+}
+
+.utility-icon {
+  width: 18px;
+  height: 18px;
+}
+/* Styling main container */
+
+.main-container {
+  margin-top: 96px;
+}
+
+/* Styling jumbo container */
+
+.jumbo-main-container {
+  background-color: var(--HEADING-BLAZE-BG);
+}
+
+.jumbo-container {
+  display: flex;
+  width: 100%;
+  margin-left: -15%;
+  justify-content: center;
+  z-index: 1000;
+  background-image: url("../img/sfwt23_sfplus_v2.png");
+  background-repeat: no-repeat;
+  background-position: 85% 5px;
+}
+
+/* Styling jumbo container world tour image */
+.world-tour {
+  margin-top: 18px;
+  margin-right: 32px;
+}
+
+.world-tour-img {
+  width: 168px;
+  height: auto;
+}
+
+/* Styling blaze your trail quote section */
+
+.blaze-quote {
+  font-size: 29px;
+  font-weight: 1000;
+  margin-top: 5px;
+}
+
+.blaze-trail {
+  color: var(--HEADING-BLAZE-TRAIL-QUOTE);
+}
+
+.blaze-sucess {
+  color: #fff;
+}
+
+.blaze-catch {
+  margin-top: 4px;
+  font-size: 15px;
+  color: #fff;
+}
+
+.blaze-watch-now {
+  display: inline-block;
+  width: 103px;
+  height: 29px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.blaze-watch-now a {
+  display: table-cell;
+  font-size: 11px;
+  text-decoration: none;
+  color: var(--HEADING-WATCH-NOW);
+  text-transform: uppercase;
+  padding: 0 16px;
+  border-radius: 4px;
+  height: 32px;
+  background-color: #fff;
+  vertical-align: middle;
+}
+
+/* Styling main slogan */
+.main-slogan-information {
+  width: 100%;
+}
+.main-slogan-container {
+  display: flex;
+  margin: 0 auto;
+  width: 1240px;
+}
+
+.drive-growth-container {
+  width: 615px;
+  margin-top: 60px;
+  margin-bottom: 10px;
+}
+
+.drive-growth-content {
+  width: 520px;
+  font-weight: 1000;
+  font-size: 52px;
+  line-height: 60px;
+  color: var(--HEADING-BLAZE-BG);
+}
+
+.meralco-sales-force-container {
+  width: 520px;
+  margin-bottom: 10px;
+}
+
+.meralco-customer {
+  color: var(--BLAZE-MERALCO-CUSTOMER);
+  font-size: 22px;
+  font-weight: lighter;
+  line-height: 30px;
+}
+
+.meralco-link {
+  color: var(--HEADING-WATCH-NOW);
+}
+
+.slogan-button {
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+.start-trial,
+.watch-demo {
+  display: inline-block;
+  margin: 10px 0;
+  line-height: 21px;
+}
+
+.start-trial {
+  margin-right: 30px;
+}
+
+.trial-link {
+  display: table-cell;
+  background-color: var(--BLAZE-TRIAL-LINK-BG);
+  color: #fff;
+  border-radius: 4px;
+  height: 42px;
+  padding: 0 24px;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+.watch-demo-link {
+  display: table-cell;
+  background-color: var(--HEADING-WATCH-NOW);
+  color: #fff;
+  border-radius: 4px;
+  height: 42px;
+  padding: 0 24px;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+/* Styling sales force function */
+
+.sales-force-functions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slogan-header {
+  width: 880px;
+  height: 40px;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.slogan-h2 {
+  width: 100%;
+
+  font-size: 36px;
+  color: var(--HEADING-HEADER-NAV-COLOR);
+  font-weight: 800;
+}
+
+.slogan-content {
+  width: 880px;
+  line-height: 30px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.content-information {
+  width: 100%;
+  font-size: 20px;
+  font-weight: 100;
+}
+
+.watch-demo-link-function {
+  display: table-cell;
+  background-color: #fff;
+  color: var(--HEADING-WATCH-NOW);
+  border-radius: 4px;
+  height: 42px;
+  padding: 0 24px;
+  text-decoration: none;
+  vertical-align: middle;
+  border: 1px solid var(--HEADING-WATCH-NOW);
+}
+
+/* .slogan-button-sales-force-function {
+  margin-top: 100px;
+} */
+
+.sales-force-function-container-background {
+  width: 100%;
+  height: 1290px;
+  background-image: url(../img/test1.jpg);
+  background-repeat: no-repeat;
+
+  background-size: cover;
+  background-position: bottom;
+}
+
+.we-bring-company-together-container {
+  width: 1312px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+.sales-force-function-items {
+  margin-top: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.features-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.feature-item {
+  list-style-image: url(../img/au-hp-min-blue-check-img.png);
+}
+
+.sales-force-function-item-container {
+  width: 364px;
+  padding: 0 16px;
+  background-color: var(--HEADING-COLOR);
+  margin-right: 2px;
+  padding-bottom: 20px;
+}
+
+.first-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.fuction-one-icon,
+.function-one-header {
+  display: inline-block;
+}
+
+.fuction-one-icon {
+  margin-right: 10px;
+}
+
+.fuction-one-link {
+  color: var(--HEADING-BLAZE-BG);
+  font-size: 24px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.second-section {
+  margin: 20px 20px;
+  font-size: 15px;
+  text-align: center;
+}
+
+.third-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title-features {
+  font-weight: 700;
+  text-align: center;
+  font-size: 15px;
+  margin-bottom: 11px;
+}
+
+.watch-demo-function {
+  display: flex;
+  justify-content: center;
+}
+
+.watch-demo {
+  padding: 15px 20px 0;
+}
+
+.function-one {
+  border-top: 3px solid #0d9dda;
+}
+
+.function-second {
+  border-top: 3px solid #0b827c;
+}
+
+.function-third {
+  border-top: 3px solid #8a033e;
+}
+
+.function-fourth {
+  border-top: 3px solid #dd7a01;
+}
+
+.function-five {
+  border-top: 3px solid #215ca0;
+}
+
+.function-six {
+  border-top: 3px solid #396547;
+}
+
+.sales-force-offers-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 40px 0;
+  padding: 0 20px;
+}
+
+.check-out-message {
+  margin-left: 20px;
+}
+.sales-force-offers-icon {
+  display: flex;
+  align-items: center;
+}
