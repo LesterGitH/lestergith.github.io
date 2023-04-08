@@ -20,6 +20,8 @@
   --HEADING-BLAZE-BG: #032d60;
   --HEADING-BLAZE-TRAIL-QUOTE: rgb(13, 157, 218);
   --HEADING-WATCH-NOW: #0b5cab;
+  --LINK-HOVER-HEADER-COLOR: #0176d3;
+  --LINK-HOVER-HEADER-BG: hsla(207, 99%, 42%, 0.135);
   --BLAZE-MERALCO-CUSTOMER: #181818;
   --BLAZE-TRIAL-LINK-BG: #278806;
   --BODY-FONT-FAMILY: "Roboto";
@@ -75,25 +77,36 @@ body {
 
 .nav-menu-utility-items {
   align-items: center;
-  padding: 0 10px;
+  column-gap: 20px;
+  padding: 0px 10px;
 }
 
 /* Styling navigation links */
 .nav-menu-item {
   padding: 0 16px;
 }
+
 .nav-menu-item a,
 .nav-menu-utility-item a {
   color: var(--HEADING-HEADER-NAV-COLOR);
   text-decoration: none;
 }
 
+.contact-us {
+  text-decoration: underline !important;
+}
+
 .menu-utility-contact-info {
   text-align: center;
 }
 
-.nav-menu-utility-item {
-  padding: 0 10px;
+.login-sales-force {
+  display: flex;
+  justify-content: space-between;
+}
+
+.login-svg {
+  margin-right: 5px;
 }
 
 /* Styling try it for free */
@@ -112,10 +125,53 @@ body {
   height: 68px;
 }
 
+/* Styling hover and SVG icons */
+
 .utility-icon {
   width: 18px;
   height: 18px;
+  fill: var(--HEADING-BLAZE-BG);
 }
+
+.world-item::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+}
+.world-item:hover,
+.search-item:hover {
+  outline: 10px solid var(--LINK-HOVER-HEADER-BG);
+  border-radius: 50%;
+  background-color: var(--LINK-HOVER-HEADER-BG);
+}
+
+.search-item:hover .search-icon,
+.world-item:hover .world-icon {
+  fill: var(--LINK-HOVER-HEADER-COLOR);
+}
+
+.login-item {
+  padding: 10px;
+}
+.login-item:hover {
+  background-color: hsla(207, 99%, 42%, 0.135);
+  border-radius: 20px;
+}
+
+.login-item:hover .login-svg,
+.login-item:hover .login-text,
+.contact-us:hover,
+.nav-menu-item a:hover {
+  fill: var(--LINK-HOVER-HEADER-COLOR);
+  color: var(--LINK-HOVER-HEADER-COLOR);
+}
+
+.hover-bg-effect:hover {
+  opacity: 0.7;
+}
+
+/* ----------------------------------------- */
+
 /* Styling main container */
 
 .main-container {
@@ -193,8 +249,13 @@ body {
   vertical-align: middle;
 }
 
+/* .blaze-image-meralco-link {
+
+}
+ */
 /* Styling main slogan */
 .main-slogan-information {
+  overflow-x: hidden;
   width: 100%;
 }
 .main-slogan-container {
@@ -452,4 +513,176 @@ body {
 .sales-force-offers-icon {
   display: flex;
   align-items: center;
+}
+
+/* ------------------------------------ */
+
+/* Styling partners component */
+
+.sales-force-partners {
+  width: 1400px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  text-align: center;
+  align-items: center;
+  margin-top: 110px;
+}
+
+.quote-content {
+  font-size: 36px;
+  font-weight: 600;
+  width: 750px;
+  color: var(--HEADING-HEADER-NAV-COLOR);
+}
+
+.sales-force-partner-image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 40px;
+  margin-top: 50px;
+}
+
+.all-customer-container {
+  margin: 50px 0;
+}
+
+.view-all-customer-link {
+  display: table-cell;
+  font-size: 14px;
+  color: var(--HEADING-WATCH-NOW);
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+
+.view-all-customer-link::after {
+  content: ">";
+  font-size: 18px;
+  font-weight: lighter;
+  width: 10px;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+
+/* ---------------------- */
+
+/* Try salesforce for free styling */
+
+.try-sales-force-free-container {
+  width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  margin-top: 40px;
+  justify-content: center;
+}
+
+.sales-force-trial-container {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.try-sales-force-quote {
+  width: 80%;
+  font-size: 52px;
+  font-weight: bold;
+  color: var(--HEADING-BLAZE-BG);
+}
+
+.free-trial-image-container {
+  width: 40%;
+}
+
+.free-trial-image-container-image {
+  width: 100%;
+  height: auto;
+}
+
+/* ---------------------------- */
+
+/* Benifits of salesforce to customer styling */
+
+.background-image-rating-content-container {
+  width: 100%;
+  background-image: url(../img/au-hp-min-section2-bg-img.jpg);
+  background-size: cover;
+  background-position: bottom;
+}
+.sales-force-ratings-container {
+  width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sales-force-rating-header-container {
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+
+.header-content {
+  font-size: 36px;
+  word-spacing: 5px;
+  font-weight: bold;
+  color: var(--HEADING-BLAZE-BG);
+}
+
+.rating-content-container-one,
+.rating-content-container-two {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.rating-content-item-first-row,
+.rating-content-item-second-row {
+  width: 24%;
+  padding: 0 16px;
+  text-align: center;
+}
+
+.rating-image-item {
+  width: 100%;
+  height: 100%;
+}
+
+.rating-quote-link {
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--HEADING-WATCH-NOW);
+}
+
+.rating-quote-link:hover {
+  opacity: 0.6;
+}
+
+.rating-quote-container {
+  margin-top: 100px;
+  margin-bottom: 30px;
+  width: 55%;
+}
+
+.rating-quote-content {
+  font-size: 36px;
+  font-weight: bold;
+  color: var(--HEADING-BLAZE-BG);
+  text-align: center;
+  line-height: 50px;
+}
+
+.extra-block-space {
+  width: 100%;
+  height: 400px;
+}
+
+.second-row-rating {
+  font-size: 22px;
+  color: var(--HEADING-BLAZE-BG);
+  font-weight: bold;
 }
