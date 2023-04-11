@@ -10,6 +10,10 @@
   box-sizing: border-box;
 }
 
+img {
+  display: block;
+}
+
 /* Variable */
 
 :root {
@@ -103,6 +107,7 @@ body {
 .login-sales-force {
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 
 .login-svg {
@@ -138,6 +143,7 @@ body {
   width: 20px;
   height: 20px;
 }
+
 .world-item:hover,
 .search-item:hover {
   outline: 10px solid var(--LINK-HOVER-HEADER-BG);
@@ -170,6 +176,174 @@ body {
   opacity: 0.7;
 }
 
+/* ------------------------- */
+
+/* Styling pop-up hover */
+
+.world-item {
+  position: relative;
+}
+
+.world-item-pop-up-container {
+  visibility: hidden;
+  position: absolute;
+  top: 100%;
+  margin-top: 25px;
+  margin-left: -454px;
+  background-color: var(--HEADING-COLOR);
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.change-region-heading {
+  margin-left: 20px;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.pop-up-region-container {
+  display: flex;
+  column-gap: 40px;
+  padding: 20px 20px;
+}
+
+.pop-up-region-container ul {
+  list-style-type: none;
+}
+
+.americas-list-items-container,
+.europle-middle-east-container-list {
+  border-right: 1px solid rgba(128, 128, 128, 0.24);
+  padding-right: 30px;
+}
+
+.asia-container-list {
+  padding-right: 20px;
+}
+
+.pop-up-region-container h4 {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-weight: lighter;
+  color: var(--BLAZE-MERALCO-CUSTOMER);
+}
+
+.pop-up-region-container ul li a {
+  text-decoration: underline;
+  line-height: 21px;
+  font-weight: lighter;
+  color: var(--HEADING-BLAZE-BG);
+  font-size: 15px;
+}
+
+.pop-up-region-container ul li a:hover,
+.trail-link:hover,
+.product-link:hover {
+  color: var(--LINK-HOVER-HEADER-COLOR);
+}
+
+.world-item-pop-up-container::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 65%;
+  border-width: 15px;
+  border-style: solid;
+  border-color: transparent transparent white transparent;
+  filter: drop-shadow(0 -1px 0 rgba(0, 0, 1, 0.151));
+}
+
+.world-item:hover .world-item-pop-up-container {
+  visibility: visible;
+}
+
+/* Styling login popup hover */
+
+.login-hover-pop-up-container {
+  visibility: hidden;
+  position: absolute;
+  top: 83%;
+  margin-left: -125px;
+  background-color: var(--HEADING-COLOR);
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  padding: 15px 15px;
+}
+
+.login-pop-up-header {
+  margin: 20px 0;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.products-container {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.24);
+  margin-bottom: 25px;
+}
+
+.product-list-container {
+  list-style-type: none;
+}
+
+.products-header,
+.trail-heading {
+  font-weight: lighter;
+  color: var(--HEADING-BLAZE-BG);
+  font-size: 12.5px;
+  margin-bottom: 10px;
+}
+
+.product-link,
+.cloud-icon-logo {
+  display: inline-block;
+  line-height: 35px;
+}
+
+.product-link {
+  margin-right: 5px;
+}
+
+.product-list-container li a {
+  font-weight: lighter;
+  text-decoration: underline;
+  color: var(--HEADING-BLAZE-BG);
+  font-size: 14px;
+}
+
+.trail-link {
+  display: block;
+  font-weight: lighter;
+  text-decoration: underline !important;
+  color: var(--HEADING-BLAZE-BG);
+  font-size: 14px;
+  margin: 20px 0;
+}
+
+.trail-context {
+  margin-top: 20px;
+  color: var(--HEADING-BLAZE-BG);
+  font-size: 13px;
+  font-weight: lighter;
+}
+
+.login-hover-pop-up-container::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 55%;
+  border-width: 15px;
+  border-style: solid;
+  border-color: transparent transparent white transparent;
+  filter: drop-shadow(0 -1px 0 rgba(0, 0, 1, 0.151));
+}
+
+.login-item:hover .login-hover-pop-up-container {
+  visibility: visible;
+}
 /* ----------------------------------------- */
 
 /* Styling main container */
@@ -549,13 +723,11 @@ body {
 }
 
 .view-all-customer-link {
-  display: table-cell;
   font-size: 14px;
   color: var(--HEADING-WATCH-NOW);
   font-weight: bold;
   text-decoration: none;
   text-transform: uppercase;
-  vertical-align: middle;
 }
 
 .view-all-customer-link::after {
@@ -564,7 +736,7 @@ body {
   font-weight: lighter;
   width: 10px;
   margin-left: 8px;
-  vertical-align: middle;
+  align-self: center;
 }
 
 /* ---------------------- */
@@ -685,4 +857,219 @@ body {
   font-size: 22px;
   color: var(--HEADING-BLAZE-BG);
   font-weight: bold;
+}
+
+/* --------------------------- */
+
+/* Styling query section */
+
+.inquiry-container {
+  background-image: url(../img/hp-img-closer-bg.png);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  padding-top: 100px;
+  border-bottom: 1px solid var(--BLAZE-MERALCO-CUSTOMER);
+}
+
+.question-related-container {
+  width: 1312px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.other-question-content-container {
+  width: 50%;
+  padding: 0 10px;
+}
+
+.question-heading-container {
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--HEADING-BLAZE-BG);
+}
+
+.question-suggestion {
+  margin-top: 20px;
+  font-size: 15px;
+  word-spacing: 1px;
+}
+
+.question-contact-button {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 20px;
+}
+
+.question-pricing-link {
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
+  color: var(--HEADING-WATCH-NOW);
+}
+
+.question-pricing-link:hover {
+  opacity: 0.6;
+}
+
+.question-image-container {
+  width: 50%;
+}
+
+.question-image {
+  width: 100%;
+  height: 100%;
+}
+
+/* ----------- */
+
+/* Footer first section */
+
+.footer-first-container-section {
+  display: flex;
+  width: 1312px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.footer-contact-info {
+  width: 25%;
+}
+
+.sales-force-logo-footer {
+  margin: 40px 0;
+}
+
+.sales-force-logo-footer img {
+  width: 80px;
+  height: 80px;
+}
+
+.sales-force-contact-social-media-container {
+  display: flex;
+  margin-bottom: 20px;
+  column-gap: 20px;
+}
+
+.social-media-icon-image {
+  width: 30px;
+  height: 30px;
+}
+
+.sales-contact-info-number {
+  font-size: 27px;
+  text-transform: uppercase;
+  margin-top: 60px;
+  margin-bottom: 150px;
+}
+
+.phone-lead-number {
+  color: var(--BLAZE-MERALCO-CUSTOMER);
+  text-decoration: none;
+}
+
+.sales-force-new-container,
+.sales-force-about-container,
+.popular-sales-force-container {
+  margin-top: 60px;
+}
+
+.sales-force-new-heading,
+.about-sales-force-heading,
+.popular-sales-force-heading {
+  font-weight: lighter;
+  font-size: 18px;
+  margin-bottom: 20px;
+  margin-right: 50px;
+}
+
+.new-sales-force-list-container,
+.about-sales-force-list,
+.popular-sales-force-list {
+  list-style-type: none;
+}
+
+.popular-sales-force-item,
+.about-sales-force-item,
+.new-sales-force-item {
+  font-size: 13px;
+  line-height: 35px;
+}
+
+.new-sales-force-link,
+.about-sales-force-link,
+.popular-sales-force-link {
+  color: var(--LINK-HOVER-HEADER-COLOR);
+  text-decoration: none;
+}
+
+.new-sales-force-link:hover,
+.about-sales-force-link:hover,
+.popular-sales-force-link:hover {
+  opacity: 0.6;
+}
+
+/* ------------------------------ */
+
+/* Styling 2nd foot container */
+.background-second-container-footer {
+  background-color: var(--HEADING-HEADER-NAV-COLOR);
+}
+.second-footer-container {
+  width: 1312px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.footer-world-wide-container {
+  margin-top: 20px;
+  margin-right: 40px;
+  margin-bottom: 60px;
+}
+
+.footer-world-wide-link {
+  display: table-cell;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  padding: 10px 40px;
+  vertical-align: middle;
+  color: var(--HEADING-COLOR);
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.footer-copyright-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  color: var(--HEADING-COLOR);
+  font-size: 13px;
+}
+
+.all-right-reserved-link,
+.footer-legal-links {
+  color: var(--LINK-HOVER-HEADER-COLOR);
+}
+
+.all-right-reserved-link:hover,
+.footer-legal-links:hover {
+  opacity: 0.6;
+}
+
+.footer-legal-list {
+  list-style-type: none;
+}
+
+.footer-legal-container-item {
+  margin-right: 20px;
+  line-height: 40px;
+}
+
+.footer-legal-list {
+  display: flex;
 }
